@@ -84,7 +84,7 @@ export function ExploreNav() {
   const filters = getSidepanelFilters().find(
     (category) => category.id === modeId[0],
   );
-  const selectedMode: Mode = modes.find((mode) => mode.id === modeId[0]);
+  const selectedMode = modes.find((mode) => mode.id === modeId[0]);
 
   return (
     <NavWrapper>
