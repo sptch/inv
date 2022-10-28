@@ -9,10 +9,11 @@ export default function RootLayout({ children }: { children: any }) {
       <head>
         <title>Next.js Turbopack App Directory Playground</title>
       </head>
-      <body className="overflow-y-hidden">
-        {/* <RootStyleRegistry>{children}</RootStyleRegistry> */}
+      <body>
+        <RootStyleRegistry>{children}</RootStyleRegistry>
 
-        {children}
+        {/* {children} */}
+
         {/* <div className="grid grid-cols-[1fr,minmax(auto,240px),min(800px,100%),1fr] gap-x-8 py-8">
           <div className="col-start-2">
  
