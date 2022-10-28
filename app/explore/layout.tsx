@@ -7,10 +7,8 @@ export default function Layout({ children }: { children: React.ReactNode }) {
     <>
       <PageViewer />
       <div>
-        <NavWrapper></NavWrapper>
         <ExploreNav />
         <SceneWrapper />
-
         {/* {children} */}
       </div>
     </>
