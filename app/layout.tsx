@@ -1,6 +1,7 @@
 import '@/styles/dist.css';
 import AddressBar from '@/ui/AddressBar';
 import GlobalNav from './GlobalNav';
+import RootStyleRegistry from './RootStyleRegistry';
 
 export default function RootLayout({ children }: { children: any }) {
   return (
@@ -9,7 +10,7 @@ export default function RootLayout({ children }: { children: any }) {
         <title>Next.js Turbopack App Directory Playground</title>
       </head>
       <body className="overflow-y-hidden">
-        {children}
+        <RootStyleRegistry>{children}</RootStyleRegistry>
 
         {/* {children} */}
         {/* <div className="grid grid-cols-[1fr,minmax(auto,240px),min(800px,100%),1fr] gap-x-8 py-8">
