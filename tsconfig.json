@@ -15,11 +15,14 @@
     "jsx": "preserve",
     "incremental": true,
     "baseUrl": ".",
+
     "paths": {
       "@/ui/*": ["ui/*"],
       "@/lib/*": ["lib/*"],
-      "@/styles/*": ["styles/*"]
+      "@/styles/*": ["styles/*"],
+      "@/viewer/*": ["viewer/*"]
     },
+
     "plugins": [
       {
         "name": "next"
@@ -27,5 +30,6 @@
     ]
   },
   "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts"],
+
   "exclude": ["node_modules"]
 }
