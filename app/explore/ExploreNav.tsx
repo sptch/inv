@@ -1,11 +1,7 @@
 'use client';
 
 import { Mode } from 'common';
-import {
-  modes,
-  fetchFiltersByModeId,
-  getSidepanelFilters,
-} from 'common/config';
+import { modes, getSidepanelFilters } from 'common/config';
 import Link from 'next/link';
 import {
   useSelectedLayoutSegment,
@@ -15,7 +11,7 @@ import styled, { css } from 'styled-components';
 
 const styledItem = css`
   all: unset;
-  flex-direction: ;
+
   display: flex;
   align-items: center;
   justify-content: center;
@@ -42,7 +38,7 @@ const styledItem = css`
   }
 `;
 
-const Wrapper = styled.div`
+export const Wrapper = styled.div`
   background-color: rgba(34, 34, 34, 0.5);
   padding: 4px;
   width: 316px;
@@ -51,7 +47,7 @@ const Wrapper = styled.div`
   align-items: flex-start;
 `;
 
-const NavWrapper = styled.div`
+export const NavWrapper = styled.div`
   position: absolute;
   top: 0;
   left: 0;
@@ -88,7 +84,7 @@ export function ExploreNav() {
   const filters = getSidepanelFilters().find(
     (category) => category.id === modeId[0],
   );
-  const selectedMode = modes.find((mode) => mode.id === modeId[0]);
+  const selectedMode: Mode = modes.find((mode) => mode.id === modeId[0]);
 
   return (
     <NavWrapper>
