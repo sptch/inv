@@ -16,6 +16,7 @@
     "singleQuote": true
   },
   "dependencies": {
+    "@next/font": "13.0.0",
     "clsx": "1.2.1",
     "concurrently": "7.5.0",
     "next": "latest",
